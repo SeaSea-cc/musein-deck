@@ -1,0 +1,951 @@
+<!doctype html><html lang="en" data-theme-pack="theme11"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#09090b"><meta name="description" content="Musein — The Agentic Creative Operating System for Pro Video"><title>Musein — Pro Video</title><style>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-400-1.woff2') format('woff2');
+    unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-400-2.woff2') format('woff2');
+    unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-400-3.woff2') format('woff2');
+    unicode-range:U+1F00-1FFF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-400-4.woff2') format('woff2');
+    unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-400-5.woff2') format('woff2');
+    unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-400-6.woff2') format('woff2');
+    unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-400-7.woff2') format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-500-1.woff2') format('woff2');
+    unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-500-2.woff2') format('woff2');
+    unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-500-3.woff2') format('woff2');
+    unicode-range:U+1F00-1FFF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-500-4.woff2') format('woff2');
+    unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-500-5.woff2') format('woff2');
+    unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-500-6.woff2') format('woff2');
+    unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-500-7.woff2') format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-600-1.woff2') format('woff2');
+    unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-600-2.woff2') format('woff2');
+    unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-600-3.woff2') format('woff2');
+    unicode-range:U+1F00-1FFF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-600-4.woff2') format('woff2');
+    unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-600-5.woff2') format('woff2');
+    unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-600-6.woff2') format('woff2');
+    unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-600-7.woff2') format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-700-1.woff2') format('woff2');
+    unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-700-2.woff2') format('woff2');
+    unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-700-3.woff2') format('woff2');
+    unicode-range:U+1F00-1FFF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-700-4.woff2') format('woff2');
+    unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-700-5.woff2') format('woff2');
+    unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-700-6.woff2') format('woff2');
+    unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-700-7.woff2') format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-800-1.woff2') format('woff2');
+    unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-800-2.woff2') format('woff2');
+    unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-800-3.woff2') format('woff2');
+    unicode-range:U+1F00-1FFF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-800-4.woff2') format('woff2');
+    unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-800-5.woff2') format('woff2');
+    unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-800-6.woff2') format('woff2');
+    unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-800-7.woff2') format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:900;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-900-1.woff2') format('woff2');
+    unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:900;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-900-2.woff2') format('woff2');
+    unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:900;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-900-3.woff2') format('woff2');
+    unicode-range:U+1F00-1FFF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:900;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-900-4.woff2') format('woff2');
+    unicode-range:U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:900;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-900-5.woff2') format('woff2');
+    unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:900;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-900-6.woff2') format('woff2');
+    unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face{
+    font-family:'Inter';
+    font-style:normal;
+    font-weight:900;
+    font-display:swap;
+    src:url('assets/vendor/fonts/inter-900-7.woff2') format('woff2');
+    unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</style>
+<style>
+  :root{
+    --paper:#fafaf8;
+    --paper-rgb:250,250,248;
+    --ink:#0a0a0a;
+    --ink-rgb:10,10,10;
+    --focus-mark:#46e3c6;
+    --focus-bg:#002fa7;
+    --focus-fg:#ffffff;
+    --border-subtle:rgba(255,255,255,.14);
+    --border-strong:rgba(255,255,255,.28);
+    --text-secondary:rgba(255,255,255,.66);
+    --text-helper:rgba(255,255,255,.46);
+    --sans:"Inter","Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+    --sans-zh:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",var(--sans);
+    --mono:"Space Mono","JetBrains Mono",ui-monospace,monospace;
+    --ease-prod:cubic-bezier(.2,0,.38,.9);
+    --preview-panel-w:min(380px,92vw);
+    --preview-panel-min-w:300px;
+    --preview-panel-max-w:560px;
+    --slide-rail-w:150px;
+    --slide-rail-min-w:128px;
+    --slide-rail-max-w:240px;
+    --deck-w:100vw;
+    --deck-h:56.25vw;
+    --deck-left:0px;
+    --deck-top:0px;
+    --deck-scale:1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--pp-stage,#000);color:#fff;font-family:var(--sans-zh);letter-spacing:0}
+  body{user-select:none}
+  body.is-rail-resizing{cursor:col-resize;user-select:none}
+  body[data-mode="present"]{background:#000}
+  body.editor-panels-collapsed{background-color:#000;background-image:radial-gradient(rgba(255,255,255,.22) 1.1px,transparent 1.6px);background-size:24px 24px;background-position:0 0}
+  #deck-viewport{position:fixed;left:var(--deck-left);top:var(--deck-top);z-index:1;width:var(--deck-w);height:var(--deck-h);overflow:hidden;background:#000}
+  body[data-mode="edit"] #deck-viewport{border-radius:14px;box-shadow:0 32px 80px rgba(0,0,0,.22),0 0 0 1px var(--pp-border)}
+  body.editor-panels-collapsed #deck-viewport,body[data-mode="present"] #deck-viewport{border-radius:0;box-shadow:none}
+  #deck{position:absolute;left:0;top:0;z-index:1;display:flex;will-change:transform}
+  .slide{position:relative;flex:0 0 var(--deck-w);width:var(--deck-w);height:var(--deck-h);overflow:hidden;background:#02040c;color:#fff}
+  .slide[hidden]{display:none!important}
+  .slide:not(.active){pointer-events:none}
+  .slide.active{pointer-events:auto}
+  @media screen{
+    #deck>.slide{content-visibility:auto;contain-intrinsic-size:var(--deck-w) var(--deck-h)}
+    #deck>.slide.active,#deck>.slide.cv-near{content-visibility:visible}
+  }
+  #hint,#nav{display:none!important}
+  #nav .dot{width:6px;height:6px;padding:0;border:0;border-radius:999px;background:rgba(255,255,255,.32);cursor:pointer;transition:width .2s var(--ease-prod),background .2s var(--ease-prod)}
+  #nav .dot.active{width:20px;background:var(--focus-mark)}
+  /* ========== Preview controller · Figma-inspired · auto light/dark ========== */
+  /* Quiet · 极简留白 · 静绿强调 — accent driven by --pp-blue */
+  :root{
+    --pp-fg:#1a1a18; --pp-fg2:#84847c; --pp-muted:#b2b2aa; --pp-icon:#5a5a52;
+    --pp-bg:#ffffff; --pp-chip:#f4f4f1; --pp-chip-h:#ecece8; --pp-border:#ecebe7; --pp-divider:#f0efeb;
+    --pp-sel-bg:#ffffff; --pp-sel-bd:#e3e2dd; --pp-sel-sh:0 1px 2px rgba(0,0,0,.06);
+    --pp-rail:#dcdbd5; --pp-off:#dcdbd5; --pp-blue:#0e9f6e; --pp-blue-h:#0c8a5f; --pp-blue-soft:rgba(14,159,110,.1); --pp-ui-icon-filter:none;
+    --pp-stage:#efede9;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --pp-fg:#f4f4f1; --pp-fg2:#a6a49b; --pp-muted:#7c7b72; --pp-icon:#c8c8c2;
+      --pp-bg:#1c1c1a; --pp-chip:#2a2a26; --pp-chip-h:#34332e; --pp-border:#36352f; --pp-divider:#2a2a26;
+      --pp-sel-bg:#3a3a34; --pp-sel-bd:#4a493f; --pp-sel-sh:0 1px 2px rgba(0,0,0,.4);
+      --pp-rail:#4a493f; --pp-off:#4a493f; --pp-blue:#34ce98; --pp-blue-h:#3ddaa3; --pp-blue-soft:rgba(52,206,152,.2); --pp-ui-icon-filter:invert(1);
+      --pp-stage:#0b0b0a;
+    }
+  }
+  /* Manual chrome theme override (sun/moon toggle) — pins light/dark regardless of OS */
+  :root[data-pp-theme="light"]{
+    --pp-fg:#1a1a18; --pp-fg2:#84847c; --pp-muted:#b2b2aa; --pp-icon:#5a5a52;
+    --pp-bg:#ffffff; --pp-chip:#f4f4f1; --pp-chip-h:#ecece8; --pp-border:#ecebe7; --pp-divider:#f0efeb;
+    --pp-sel-bg:#ffffff; --pp-sel-bd:#e3e2dd; --pp-sel-sh:0 1px 2px rgba(0,0,0,.06);
+    --pp-rail:#dcdbd5; --pp-off:#dcdbd5; --pp-blue:#0e9f6e; --pp-blue-h:#0c8a5f; --pp-blue-soft:rgba(14,159,110,.1); --pp-ui-icon-filter:none;
+    --pp-stage:#efede9;
+  }
+  :root[data-pp-theme="dark"]{
+    --pp-fg:#f4f4f1; --pp-fg2:#a6a49b; --pp-muted:#7c7b72; --pp-icon:#c8c8c2;
+    --pp-bg:#1c1c1a; --pp-chip:#2a2a26; --pp-chip-h:#34332e; --pp-border:#36352f; --pp-divider:#2a2a26;
+    --pp-sel-bg:#3a3a34; --pp-sel-bd:#4a493f; --pp-sel-sh:0 1px 2px rgba(0,0,0,.4);
+    --pp-rail:#4a493f; --pp-off:#4a493f; --pp-blue:#34ce98; --pp-blue-h:#3ddaa3; --pp-blue-soft:rgba(52,206,152,.2); --pp-ui-icon-filter:invert(1);
+    --pp-stage:#0b0b0a;
+  }
+  /* ===== Quiet topbar (播放 / 导出 / 重置 / 明暗 / 收起) ===== */
+  :root{--pp-topbar-h:52px}
+  #deck-topbar{position:fixed;left:0;top:0;right:0;z-index:80;height:var(--pp-topbar-h);display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 51px 0 18px;background:var(--pp-bg);border-bottom:1px solid var(--pp-divider);color:var(--pp-fg);font-family:var(--sans)}
+  body.editor-panels-collapsed #deck-topbar{display:none}
+  body[data-mode="present"] #deck-topbar{display:none}
+  .pp-topbar-brand{display:flex;align-items:center;gap:11px;min-width:0}
+  .pp-topbar-dot{width:9px;height:9px;border-radius:50%;background:var(--pp-blue);flex:0 0 auto}
+  .pp-topbar-title{font:600 14px/1 var(--sans-zh);letter-spacing:-.01em;color:var(--pp-fg);white-space:nowrap}
+  .pp-topbar-count{font:500 11.5px/1 var(--sans);color:var(--pp-fg2);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .pp-topbar-actions{display:flex;align-items:center;gap:7px;flex:0 0 auto}
+  .pp-topbar-sep{width:1px;height:20px;background:var(--pp-divider);margin:0 3px;flex:0 0 auto}
+  #deck-topbar #preview-present-btn.pp-present{height:34px;min-width:0;padding:0 15px}
+  #deck-topbar .pp-export{width:auto}
+  #deck-topbar #preview-export-main{width:auto;height:34px;padding:0 13px}
+  #deck-topbar .pp-export-menu{top:calc(100% + 6px);bottom:auto;left:auto;right:0}
+  #deck-topbar #preview-reset{height:34px;min-width:0;padding:0 13px}
+  #preview-theme-toggle,#preview-lang-toggle{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--pp-border);border-radius:6px;background:var(--pp-bg);color:var(--pp-icon);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+  #preview-theme-toggle:hover,#preview-lang-toggle:hover{background:var(--pp-chip);color:var(--pp-fg)}
+  #preview-theme-toggle svg{width:17px;height:17px}
+  #preview-lang-toggle{font-size:12px;font-weight:650;letter-spacing:.02em}
+  #deck-page-pager{position:fixed;left:calc(var(--deck-left) + var(--deck-w)/2);bottom:24px;z-index:120;display:flex;align-items:center;gap:4px;padding:5px;border:1px solid var(--pp-border);border-radius:12px;background:var(--pp-bg);box-shadow:0 8px 26px rgba(0,0,0,.18);color:var(--pp-fg);transform:translateX(-50%);font-family:var(--sans);transition:opacity .22s var(--ease-prod),transform .22s var(--ease-prod);pointer-events:auto}
+  body.editor-panels-collapsed #deck-page-pager,body[data-mode="present"] #deck-page-pager{display:none}
+  #deck-page-pager button{display:grid;place-items:center;width:34px;height:34px;border:0;border-radius:8px;background:transparent;color:var(--pp-fg2);cursor:pointer;transition:background .15s,color .15s}
+  #deck-page-pager button:hover{background:var(--pp-chip);color:var(--pp-fg)}
+  #deck-page-pager button:disabled{opacity:.35;cursor:default}
+  #deck-page-pager button:disabled:hover{background:transparent;color:var(--pp-fg2)}
+  #deck-page-pager svg{width:16px;height:16px}
+  #deck-page-count{min-width:58px;text-align:center;font:600 12px/1 var(--mono);color:var(--pp-fg)}
+  #deck-save-status{position:fixed;left:24px;bottom:24px;z-index:110;max-width:320px;padding:9px 14px;border:1px solid var(--pp-border);border-radius:10px;background:var(--pp-bg);color:var(--pp-fg2);box-shadow:0 8px 26px rgba(0,0,0,.18);font:500 12px/1.4 var(--sans-zh);pointer-events:none}
+  #deck-save-status[hidden]{display:none}
+  body.editor-panels-collapsed #deck-save-status,body[data-mode="present"] #deck-save-status{display:none}
+  #preview-panel-collapse{position:fixed;right:10px;top:9px;z-index:82;width:34px;height:34px;display:none;place-items:center;border:1px solid var(--pp-border);border-radius:6px;background:var(--pp-bg);color:var(--pp-icon);cursor:pointer;transition:background .15s,color .15s,border-color .15s,box-shadow .15s}
+  body.preview-panel-open #preview-panel-collapse,body.editor-panels-collapsed #preview-panel-collapse{display:grid}
+  #preview-panel-collapse:hover{background:var(--pp-chip);color:var(--pp-fg);border-color:var(--pp-border)}
+  #preview-panel-collapse:focus-visible{outline:2px solid var(--pp-blue);outline-offset:2px}
+  /* 非 HTTP 模式导出引导弹窗:视觉与预览控制面板同一套 --pp-* token,深浅色自适应 */
+  #export-http-modal{position:fixed;inset:0;z-index:120;display:none;place-items:center;background:rgba(0,0,0,.44);backdrop-filter:blur(2px)}
+  #export-http-modal.open{display:grid}
+  #export-http-modal .ehm-card{width:min(480px,92vw);background:var(--pp-bg);color:var(--pp-fg);border:1px solid var(--pp-border);border-radius:14px;box-shadow:0 24px 64px rgba(0,0,0,.28);padding:22px 22px 18px;font-family:inherit}
+  #export-http-modal .ehm-title{font-size:15px;font-weight:700;letter-spacing:.01em;margin:0 0 6px;display:flex;align-items:center;gap:8px}
+  #export-http-modal .ehm-desc{font-size:12.5px;color:var(--pp-fg2);line-height:1.65;margin:0 0 14px}
+  #export-http-modal .ehm-label{font-size:12px;color:var(--pp-fg2);margin:14px 0 6px}
+  #export-http-modal .ehm-prompt{display:flex;align-items:stretch;gap:8px}
+  #export-http-modal .ehm-prompt code{flex:1;min-width:0;display:block;background:var(--pp-chip);border:1px solid var(--pp-border);border-radius:8px;padding:10px 12px;font-size:12px;line-height:1.55;color:var(--pp-fg);white-space:pre-wrap;word-break:break-all;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  #export-http-modal .ehm-copy{flex:none;align-self:stretch;min-width:58px;border:1px solid var(--pp-border);border-radius:8px;background:var(--pp-bg);color:var(--pp-icon);font-size:12px;cursor:pointer;transition:background .15s,color .15s,border-color .15s;padding:0 10px}
+  #export-http-modal .ehm-copy:hover{background:var(--pp-chip);color:var(--pp-fg)}
+  #export-http-modal .ehm-copy.copied{color:var(--pp-blue);border-color:var(--pp-blue)}
+  #export-http-modal .ehm-close{position:absolute;top:14px;right:14px;width:30px;height:30px;display:grid;place-items:center;border:none;background:transparent;color:var(--pp-muted);font-size:18px;line-height:1;cursor:pointer;border-radius:6px}
+  #export-http-modal .ehm-close:hover{background:var(--pp-chip);color:var(--pp-fg)}
+  #export-http-modal .ehm-card{position:relative}
+  #preview-panel-collapse img{width:20px;height:20px;display:block;object-fit:contain;filter:var(--pp-ui-icon-filter);opacity:.78;transition:transform .18s var(--ease-prod),opacity .15s}
+  body.editor-panels-collapsed #preview-panel-collapse{right:18px;top:8px;border-color:rgba(255,255,255,.16);background:rgba(0,0,0,.55)}
+  body.editor-panels-collapsed #preview-panel-collapse:hover{background:rgba(0,0,0,.72);border-color:rgba(255,255,255,.3)}
+  body.editor-panels-collapsed #preview-panel-collapse img{filter:invert(1);opacity:.92}
+  body[data-mode="present"] #preview-panel-collapse{display:none}
+  #slide-rail{position:fixed;left:0;top:var(--pp-topbar-h);z-index:24;width:var(--slide-rail-w);min-width:var(--slide-rail-min-w);max-width:var(--slide-rail-max-w);height:calc(100vh - var(--pp-topbar-h));display:flex;flex-direction:column;background:var(--pp-bg);color:var(--pp-fg);border-right:1px solid var(--pp-divider);box-shadow:none;font-family:var(--sans);overflow:hidden}
+  body.editor-panels-collapsed #slide-rail{display:none}
+  body[data-mode="present"] #slide-rail{display:none}
+  .slide-rail-head{height:52px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 10px 0 12px;border-bottom:1px solid var(--pp-divider)}
+  .slide-rail-title{font:650 13px/1 var(--sans-zh);color:var(--pp-fg)}
+  .slide-rail-count{font:600 11px/1 var(--mono);color:var(--pp-fg2);letter-spacing:.02em}
+  .slide-rail-resize{position:absolute;right:0;top:0;z-index:5;width:8px;height:100%;border:0;background:transparent;cursor:col-resize;touch-action:none}
+  .slide-rail-resize::after{content:"";position:absolute;right:2px;top:0;width:1px;height:100%;background:transparent;transition:background .16s}
+  .slide-rail-resize:hover::after,.slide-rail-resize:focus-visible::after,body.is-rail-resizing .slide-rail-resize::after{background:var(--pp-blue)}
+  .slide-rail-resize:focus-visible{outline:2px solid var(--pp-blue);outline-offset:-3px}
+  #slide-rail-list{--rail-pad-x:12px;--rail-scrollbar-w:0px;flex:1;overflow-y:auto;overflow-x:hidden;padding:12px max(2px,calc(var(--rail-pad-x) - var(--rail-scrollbar-w))) 18px var(--rail-pad-x);scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:var(--pp-rail) transparent}
+  #slide-rail-list::-webkit-scrollbar{width:8px}
+  #slide-rail-list::-webkit-scrollbar-track{background:transparent}
+  #slide-rail-list::-webkit-scrollbar-thumb{background:var(--pp-rail);border-radius:999px;border:2px solid transparent;background-clip:content-box}
+  .rail-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;align-items:start;width:100%;min-width:0}
+  .rail-card{position:relative;display:grid;gap:0;width:100%;min-width:0;max-width:100%;padding:2px;border:3px solid transparent;border-radius:12px;background:transparent;color:var(--pp-fg);cursor:pointer;text-align:left;outline:1px solid transparent;transition:opacity .16s,transform .2s,border-color .16s,box-shadow .16s}
+  .rail-card:hover .rail-thumb-frame{box-shadow:0 0 0 1px var(--pp-fg2)}
+  .rail-card[aria-current="true"]{background:transparent;color:var(--pp-fg);border-color:var(--pp-blue);outline-color:transparent;box-shadow:0 6px 18px var(--pp-blue-soft)}
+  .rail-card[aria-current="true"] .rail-thumb-frame{box-shadow:0 0 0 1px var(--pp-border)}
+  .rail-card.is-dragging{opacity:.45;cursor:grabbing}
+  .rail-thumb-frame{position:relative;width:100%;min-width:0;max-width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:8px;background:var(--paper);box-shadow:0 0 0 1px var(--pp-border);transition:box-shadow .16s;contain:layout paint style}
+  .rail-thumb{position:absolute;inset:0;width:100%;min-width:0;max-width:100%;height:100%;overflow:hidden;pointer-events:none;background:var(--paper);contain:layout paint style}
+  .rail-label{position:absolute;left:7px;top:6px;z-index:3;display:inline-flex;align-items:center;gap:6px;padding:2px 6px;border-radius:5px;background:rgba(10,10,10,.5);color:#fff;font:700 9px/1 var(--mono);letter-spacing:.02em;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+  .rail-card[aria-current="true"] .rail-label{color:#fff;background:var(--pp-blue)}
+  .rail-skip-badge{position:absolute;right:10px;top:10px;z-index:3;padding:4px 7px;border-radius:999px;background:rgba(10,10,10,.72);color:#fff;font:600 10px/1 var(--sans-zh);pointer-events:none}
+  .rail-drop-marker{position:absolute;z-index:6;left:5px;right:5px;height:4px;display:none;border-radius:999px;background:var(--focus-mark);box-shadow:0 0 0 3px rgba(0,0,0,.08);pointer-events:none}
+  .rail-context-menu{position:fixed;z-index:130;min-width:138px;display:none;padding:5px;background:var(--pp-bg);border:1px solid var(--pp-border);border-radius:8px;box-shadow:0 14px 36px rgba(0,0,0,.22);color:var(--pp-fg)}
+  .rail-context-menu button{display:flex;align-items:center;justify-content:space-between;width:100%;height:34px;padding:0 9px;border:0;border-radius:6px;background:transparent;color:var(--pp-fg);font:500 12.5px/1 var(--sans-zh);text-align:left;cursor:pointer}
+  .rail-context-menu button:hover{background:var(--pp-blue-soft)}
+  .rail-context-menu button[disabled]{opacity:.42;cursor:not-allowed}
+  .rail-context-menu button[disabled]:hover{background:transparent}
+  body[data-mode="present"] #deck,
+  body[data-mode="present"] #deck *{cursor:default!important}
+  #preview-panel{position:fixed;right:0;top:var(--pp-topbar-h);z-index:24;width:var(--preview-panel-w);min-width:var(--preview-panel-min-w);max-width:var(--preview-panel-max-w);height:calc(100vh - var(--pp-topbar-h));display:flex;flex-direction:column;background:var(--pp-bg);color:var(--pp-fg);border-left:1px solid var(--pp-divider);box-shadow:none;transform:translateX(100%);transition:transform .24s var(--ease-prod);overflow:hidden;font-family:var(--sans);font-variant-numeric:tabular-nums;letter-spacing:0}
+  .preview-panel-resize{position:absolute;left:0;top:0;z-index:5;width:8px;height:100%;border:0;background:transparent;cursor:col-resize;touch-action:none}
+  .preview-panel-resize::after{content:"";position:absolute;left:2px;top:0;width:1px;height:100%;background:transparent;transition:background .16s}
+  .preview-panel-resize:hover::after,.preview-panel-resize:focus-visible::after,body.is-rail-resizing .preview-panel-resize::after{background:var(--pp-blue)}
+  .preview-panel-resize:focus-visible{outline:2px solid var(--pp-blue);outline-offset:-3px}
+  body.preview-panel-open #preview-panel{transform:translateX(0)}
+  body.editor-panels-collapsed #preview-panel{display:none;transform:translateX(100%);pointer-events:none}
+  body[data-mode="present"] #preview-panel{display:none}
+  #preview-panel svg{display:block;flex:0 0 auto}
+  /* body / fields */
+  .preview-fields{flex:1;overflow:auto;display:block;padding:24px 28px 30px}
+  .preview-field{padding:0 0 28px;border-bottom:0;display:grid;gap:11px}
+  .preview-field+.preview-field{border-top:1px solid var(--pp-divider);padding-top:28px}
+  .preview-field.is-hidden{display:none}
+  .preview-field label{font:600 10px/1 var(--sans-zh);letter-spacing:.13em;color:var(--pp-muted);text-transform:uppercase}
+  .preview-prop-row>span{font:650 13px/1.2 var(--sans-zh);letter-spacing:0;color:var(--pp-fg);text-transform:none}
+  .preview-field select{height:40px;border:1px solid var(--pp-border);border-radius:9px;background-color:var(--pp-bg);color:var(--pp-fg);padding:0 38px 0 14px;font:500 13px/1 var(--sans-zh);cursor:pointer;appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2384847c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 13px center;transition:border-color .15s,background-color .15s,box-shadow .15s}
+  .preview-field select:hover{background-color:var(--pp-chip)}
+  .preview-field select:focus-visible{outline:none;border-color:var(--pp-blue);box-shadow:0 0 0 3px var(--pp-blue-soft)}
+  .preview-transition-color-control{display:block}
+  .preview-transition-color-options{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px}
+  .preview-transition-color-slider{position:relative;min-width:0}
+  .preview-transition-color-slider input[type="range"]{-webkit-appearance:none;appearance:none;width:100%;height:18px;margin:0;border-radius:9px;background:linear-gradient(to right,#000 0%,#ff0000 10%,#ffff00 25%,#00ff00 40%,#00ffff 55%,#0000ff 70%,#ff00ff 85%,#fff 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.2);cursor:pointer;outline:none}
+  .preview-transition-color-slider input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--tx-thumb,#000);border:3px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.4),0 2px 6px rgba(0,0,0,.35);cursor:grab}
+  .preview-transition-color-slider input[type="range"]:active::-webkit-slider-thumb{cursor:grabbing}
+  .preview-transition-color-slider input[type="range"]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--tx-thumb,#000);border:3px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.4),0 2px 6px rgba(0,0,0,.35);cursor:grab}
+  .preview-transition-color-slider input[type="range"]::-moz-range-track{height:18px;border-radius:9px;background:transparent}
+  .preview-transition-color-slider input[type="range"]:focus-visible{box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 3px var(--pp-blue-soft)}
+  .preview-transition-color-readout{font:600 11px/1 var(--mono);color:var(--pp-fg);min-width:62px;text-align:right;text-transform:uppercase;letter-spacing:.02em}
+  .preview-props{display:grid;gap:28px}
+  /* property rows */
+  .preview-prop-row{display:grid;grid-template-columns:minmax(96px,max-content) minmax(0,1fr);align-items:center;gap:12px}
+  .preview-prop-row.is-choice,.preview-prop-row.is-range,.preview-prop-row.is-icons,.preview-prop-row.is-number-picker{grid-template-columns:1fr;gap:11px}
+  .preview-prop-row>span{display:flex;align-items:center;min-width:0;max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-prop-row.is-choice>span,.preview-prop-row.is-range>span,.preview-prop-row.is-icons>span,.preview-prop-row.is-number-picker>span{font:650 11px/1 var(--sans-zh);letter-spacing:.06em;color:var(--pp-muted)}
+  /* slider (range) */
+  .pp-slider{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px;width:100%;min-width:0}
+  .pp-slider-track{position:relative;min-width:48px;height:15px;display:flex;align-items:center}
+  .preview-prop-row input[type="range"]{-webkit-appearance:none;appearance:none;width:100%;margin:0;cursor:grab;outline:none;background:transparent;touch-action:none}
+  .preview-prop-row input[type="range"]:active{cursor:grabbing}
+  /* stepped variant */
+  .pp-slider.is-stepped input[type="range"],.pp-slider.is-smooth input[type="range"]{height:15px;color:var(--pp-blue);border-radius:99px;background:linear-gradient(var(--pp-blue),var(--pp-blue)) left center/var(--pp-pct,0%) 5px no-repeat,linear-gradient(var(--pp-rail),var(--pp-rail)) left center/100% 5px no-repeat}
+  .pp-slider input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:15px;height:15px;border-radius:50%;background:#fff;border:2px solid currentColor;box-shadow:0 1px 3px rgba(0,0,0,.32);cursor:grab;transition:width .15s cubic-bezier(.34,1.56,.64,1),height .15s cubic-bezier(.34,1.56,.64,1),box-shadow .15s}
+  .pp-slider input[type="range"]:active::-webkit-slider-thumb{width:23px;height:23px;cursor:grabbing;box-shadow:0 2px 8px rgba(0,0,0,.32)}
+  .pp-slider input[type="range"]::-moz-range-thumb{width:15px;height:15px;border:2px solid currentColor;border-radius:50%;background:#fff;cursor:grab;transition:width .15s cubic-bezier(.34,1.56,.64,1),height .15s cubic-bezier(.34,1.56,.64,1)}
+  .pp-slider input[type="range"]:active::-moz-range-thumb{width:23px;height:23px;cursor:grabbing}
+  .pp-slider input[type="range"]::-moz-range-track{height:5px;border:0;border-radius:99px;background:var(--pp-rail)}
+  .pp-slider.is-stepped{align-items:start}
+  .pp-slider.is-stepped .pp-slider-track{height:auto;display:grid;grid-template-rows:15px auto;gap:8px;align-items:center}
+  .pp-slider.is-stepped input[type="range"]{grid-row:1}
+  .pp-ticks{position:static;display:flex;justify-content:space-between;padding:0 6px;pointer-events:none}
+  .pp-ticks span{display:flex;flex-direction:column;align-items:center;gap:5px;width:auto;height:auto;border-radius:0;background:transparent}
+  .pp-ticks span::before{content:"";width:1px;height:6px;border-radius:1px;background:var(--pp-border)}
+  .pp-ticks span::after{content:attr(data-label);font:600 10px/1 var(--mono);color:var(--pp-muted)}
+  .pp-ticks span.on::before{background:var(--pp-blue)}
+  .pp-ticks span.on::after{color:var(--pp-fg)}
+  .preview-prop-row output{min-width:42px;height:24px;padding:0 7px;display:grid;place-items:center;font:600 12px/1 var(--mono);color:var(--pp-fg);background:transparent;border-radius:6px;text-align:right}
+  .preview-prop-number-grid{display:grid;grid-template-columns:repeat(var(--pp-number-cols,4),minmax(0,1fr));gap:7px;width:100%;min-width:0}
+  .preview-prop-number-choice{height:32px;min-width:0;border:1px solid transparent;border-radius:7px;background:var(--pp-chip);color:var(--pp-fg2);font:650 12px/1 var(--mono);cursor:pointer;transition:background-color .15s,border-color .15s,color .15s,box-shadow .15s}
+  .preview-prop-number-choice:hover:not(.is-active){border-color:var(--pp-border);color:var(--pp-fg)}
+  .preview-prop-number-choice:focus-visible{outline:none;box-shadow:0 0 0 3px var(--pp-blue-soft)}
+  .preview-prop-number-choice.is-active{background:var(--pp-blue);border-color:var(--pp-blue);color:#fff}
+  /* toggle / switch */
+  .pp-switch{justify-self:end;position:relative;display:block;width:40px;height:23px;flex:0 0 auto;cursor:pointer}
+  .pp-switch input{position:absolute;inset:0;z-index:2;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+  .pp-switch .pp-track{position:absolute;inset:0;border-radius:99px;background:var(--pp-off);transition:background .2s}
+  .pp-switch .pp-knob{position:absolute;top:2px;left:2px;width:19px;height:19px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.3);transition:transform .22s cubic-bezier(.3,.7,.3,1.3)}
+  .pp-switch input:checked~.pp-track{background:var(--pp-blue)}
+  .pp-switch input:checked~.pp-knob{transform:translateX(17px)}
+  /* segmented choice group */
+  .preview-prop-choice-group{position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:0;padding:3px;background:var(--pp-chip);border-radius:10px;overflow:hidden}
+  .pp-seg-indicator{position:absolute;top:3px;left:3px;width:calc((100% - 6px)/var(--pp-choice-count,1));height:calc(100% - 6px);border-radius:8px;background:var(--pp-bg);box-shadow:0 1px 2px rgba(0,0,0,.12);transform:translateX(calc(var(--pp-choice-index,0)*100%));transition:transform .42s cubic-bezier(.34,1.56,.64,1);pointer-events:none}
+  .preview-prop-choice{position:relative;z-index:1;height:32px;display:flex;align-items:center;justify-content:center;border:0;border-radius:8px;background:transparent;color:var(--pp-fg2);font:500 12.5px/1 var(--sans-zh);cursor:pointer;transition:color .2s,font-weight .2s}
+  .preview-prop-choice:hover:not(.is-active){color:var(--pp-fg)}
+  .preview-prop-choice.is-active{background:transparent;color:var(--pp-fg);font-weight:600}
+  .preview-prop-choice:focus-visible{outline:2px solid var(--pp-blue);outline-offset:-2px}
+  .preview-layout-variants .preview-prop-choice{font:650 12px/1 var(--mono)}
+  .preview-layout-variant-readonly{margin-top:9px;padding:10px 11px;border:1px solid var(--pp-border);border-radius:8px;background:var(--pp-chip);color:var(--pp-fg2);font:500 11.5px/1.55 var(--sans-zh)}
+  .preview-layout-variant-readonly.is-hidden{display:none}
+  .preview-layout-variants .preview-prop-choice.is-selected::after{content:"";position:absolute;left:50%;bottom:3px;width:4px;height:4px;border-radius:50%;background:var(--pp-blue);transform:translateX(-50%)}
+  /* color swatch group (display:color) */
+  .preview-prop-choice-group.is-color{display:grid;grid-template-columns:repeat(var(--pp-color-cols,3),minmax(0,1fr));grid-auto-flow:row;grid-auto-columns:initial;gap:11px;padding:0;background:transparent;border-radius:0;overflow:visible}
+  .preview-prop-choice-group.is-color .pp-seg-indicator{display:none}
+  .preview-prop-choice-group.is-color .preview-prop-choice{width:100%;height:36px;min-width:0;border-radius:8px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.18);transition:transform .14s,box-shadow .14s}
+  .preview-prop-choice-group.is-color .preview-prop-choice:hover{transform:translateY(-1px)}
+  .preview-prop-choice-group.is-color .preview-prop-choice:focus-visible{outline:2px solid var(--pp-blue);outline-offset:3px}
+  .preview-prop-choice-group.is-color .preview-prop-choice.is-active{box-shadow:0 0 0 2px var(--pp-bg),0 0 0 4px var(--pp-blue)}
+  .preview-prop-icon-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+  .preview-prop-icon-choice{min-height:72px;display:grid;grid-template-rows:46px auto;place-items:center;gap:5px;padding:6px 4px;border:1px solid transparent;border-radius:8px;background:var(--pp-chip);color:var(--pp-fg2);font:500 10px/1.15 var(--sans-zh);cursor:pointer;text-align:center}
+  .preview-prop-icon-choice:hover{background:var(--pp-chip-h);color:var(--pp-fg)}
+  .preview-prop-icon-choice.is-active{background:var(--pp-sel-bg);border-color:var(--pp-blue);box-shadow:0 0 0 1px var(--pp-blue-soft);color:var(--pp-fg);font-weight:600}
+  .preview-prop-icon-choice img{max-width:46px;max-height:46px;width:auto;height:auto;object-fit:contain;display:block}
+  .preview-prop-icon-empty{width:34px;height:34px;border-radius:8px;border:1px dashed var(--pp-muted);display:grid;place-items:center;color:var(--pp-muted);font:600 11px/1 var(--sans)}
+  /* footer actions */
+  .preview-author{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px 12px;border-top:1px solid var(--pp-divider)}
+  .preview-author-name{min-width:0;color:var(--pp-fg2);font:650 12px/1 var(--sans-zh);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .preview-author-links{display:flex;align-items:center;gap:6px;flex:none}
+  .preview-author-links a{width:28px;height:28px;display:grid;place-items:center;border:1px solid transparent;border-radius:6px;color:var(--pp-icon);text-decoration:none;transition:background .15s,color .15s,border-color .15s}
+  .preview-author-links a:hover{background:var(--pp-chip);border-color:var(--pp-border);color:var(--pp-fg)}
+  .preview-author-links svg{width:16px;height:16px;display:block}
+  .preview-author-links img{width:18px;height:18px;display:block;object-fit:contain}
+  .preview-author-links img[data-social-icon="github"]{filter:var(--pp-ui-icon-filter)}
+  .preview-actions{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;align-items:stretch;gap:8px;padding:8px 14px 12px}
+  #preview-present-btn.pp-present{display:flex;align-items:center;justify-content:center;gap:8px;min-width:0;height:36px;border:0;border-radius:6px;cursor:pointer;background:var(--pp-blue);color:#fff;font:600 13px/1 var(--sans-zh)}
+  #preview-present-btn.pp-present:hover{background:var(--pp-blue-h)}
+  #preview-present-btn.pp-present svg{width:16px;height:16px}
+  .pp-export{position:relative;min-width:0}
+  #preview-export-main{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:36px;border:1px solid var(--pp-border);border-radius:6px;cursor:pointer;background:var(--pp-chip);color:var(--pp-fg);font:500 13px/1 var(--sans-zh)}
+  #preview-export-main:hover{background:var(--pp-chip-h)}
+  #preview-export-main svg{width:16px;height:16px}
+  #preview-export-main .pp-cap{transition:transform .2s}
+  .pp-export.open #preview-export-main .pp-cap{transform:rotate(180deg)}
+  .pp-export-menu{position:absolute;right:0;bottom:calc(100% + 6px);z-index:240;display:none;min-width:180px;flex-direction:column;padding:4px;background:var(--pp-bg);border:1px solid var(--pp-border);border-radius:8px;box-shadow:0 12px 34px rgba(0,0,0,.22)}
+  .pp-export.open .pp-export-menu{display:flex}
+  .pp-export-menu button{display:flex;align-items:center;gap:10px;height:36px;padding:0 9px;border:0;border-radius:6px;background:transparent;cursor:pointer;color:var(--pp-fg);font:500 12.5px/1 var(--sans-zh);text-align:left}
+  .pp-export-menu button svg{width:16px;height:16px;color:var(--pp-icon)}
+  .pp-export-menu button span{flex:1}
+  .pp-export-menu button kbd{font:500 10px/1 var(--sans);color:var(--pp-fg2);padding:3px 6px;border-radius:4px;background:var(--pp-chip)}
+  .pp-export-menu button:hover{background:var(--pp-blue-soft)}
+  .pp-export-menu button:hover svg{color:var(--pp-blue)}
+  .deck-export-overlay{position:fixed;inset:0;z-index:400;display:none;align-items:center;justify-content:center;background:rgba(6,7,10,.78);backdrop-filter:blur(16px);color:#fff;pointer-events:auto}
+  body.exporting-deck .deck-export-overlay{display:flex}
+  .deck-export-card{width:min(360px,calc(100vw - 48px));display:grid;gap:16px;padding:22px 24px;border:1px solid rgba(255,255,255,.18);border-radius:10px;background:rgba(20,22,27,.9);box-shadow:0 22px 70px rgba(0,0,0,.42)}
+  .deck-export-title{font:700 15px/1.2 var(--sans-zh)}
+  .deck-export-detail{font:500 12px/1.5 var(--sans-zh);color:rgba(255,255,255,.68)}
+  .deck-export-bar{height:8px;border-radius:999px;background:rgba(255,255,255,.16);overflow:hidden}
+  .deck-export-fill{height:100%;width:0%;border-radius:inherit;background:var(--focus-mark);transition:width .18s var(--ease-prod)}
+  .deck-export-actions{display:flex;justify-content:flex-end}
+  .deck-export-cancel{height:32px;padding:0 13px;border:1px solid rgba(255,255,255,.2);border-radius:6px;background:rgba(255,255,255,.08);color:#fff;cursor:pointer;font:600 12.5px/1 var(--sans-zh)}
+  .deck-export-cancel:hover{background:rgba(255,255,255,.14)}
+  .deck-export-cancel[disabled]{opacity:.62;cursor:default}
+  #preview-reset{display:flex;align-items:center;justify-content:center;gap:6px;min-width:78px;height:36px;padding:0 11px;border:1px solid var(--pp-border);border-radius:6px;background:var(--pp-bg);color:var(--pp-fg2);cursor:pointer;font:500 12.5px/1 var(--sans-zh)}
+  #preview-reset:hover{background:var(--pp-chip);color:var(--pp-fg)}
+  #preview-reset svg{width:15px;height:15px}
+  [contenteditable="true"]{outline:none;overflow-wrap:normal;word-break:normal}
+  body.preview-panel-open [contenteditable="true"]{cursor:text;user-select:text}
+  body.preview-panel-open [contenteditable="true"]:focus{box-shadow:0 0 0 2px var(--focus-mark);border-radius:6px}
+  .page-transition-stage{position:fixed;left:var(--deck-left);top:var(--deck-top);width:var(--deck-w);height:var(--deck-h);z-index:90;pointer-events:none;background:#02040c;opacity:0;overflow:hidden}
+  .page-transition-stage.is-active{opacity:1}
+  body[data-mode="edit"] .page-transition-stage{border-radius:14px}
+  body.editor-panels-collapsed .page-transition-stage,body[data-mode="present"] .page-transition-stage{border-radius:0}
+  .page-transition-stage .slide{position:absolute;left:0;top:0}
+  .page-transition-stage [data-transition-role="current"] *{animation:none!important;transition:none!important}
+  .slide[data-runtime-prop-update] *,
+  .slide[data-runtime-prop-update] *::before,
+  .slide[data-runtime-prop-update] *::after{
+    animation:none!important;
+    transition:none!important;
+  }
+  .page-transition-stage [data-transition-role="next"] *{animation-delay:0ms!important;animation-play-state:paused!important;animation-fill-mode:both!important;transition:none!important}
+  .page-transition-stage[data-enter-motion="running"] [data-transition-role="next"] *{animation-play-state:running!important}
+  .page-transition-pixel-grid,.page-transition-slice-grid,.page-transition-container{position:absolute;inset:0;z-index:6;pointer-events:none}
+  .page-transition-pixel{position:absolute;background:#05070b;box-shadow:0 0 0 1px rgba(255,255,255,.035);will-change:transform,opacity}
+  .page-transition-slice{position:absolute;background:#05070b;will-change:transform,opacity}
+  .page-transition-container{overflow:hidden;will-change:transform,opacity,clip-path}
+  .page-transition-container .slide{position:absolute;inset:0}
+  .bt-unicorn-frame{background:#05070b}
+  .bt-unicorn-scene{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+  .bt-unicorn-scene canvas{width:100%!important;height:100%!important;display:block}
+  .imported-theme-root{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;transform:scale(var(--deck-scale));transform-origin:top left}
+  .imported-theme-root *{box-sizing:border-box}
+  .bg-blue{background:radial-gradient(125% 135% at 16% 102%,#5a8dff 0%,#2f6bff 20%,#1d4ad8 40%,#122e93 60%,#08164a 80%,#03081e 100%)}
+  .bg-deep{background:radial-gradient(115% 120% at 24% 90%,#224bd6 0%,#15369f 26%,#0c205f 50%,#070f38 72%,#03071a 100%)}
+  .bg-electric{background:radial-gradient(120% 130% at 28% 102%,#5f8eff 0%,#386df3 20%,#2350d6 38%,#1638a0 56%,#0c2160 74%,#050e36 90%,#02060f 100%)}
+  .bg-night{background:radial-gradient(125% 120% at 78% 8%,#1c3aa8 0%,#142b78 22%,#0b1a4c 44%,#060f30 66%,#03081c 84%,#01030c 100%)}
+  @page{size:20in 11.25in;margin:0}
+  @media print{
+    *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+    :root{--deck-scale:1!important}
+    #hint,#nav,#deck-topbar,#deck-page-pager,#deck-save-status,#preview-panel-collapse,#preview-panel,#slide-rail,.deck-export-overlay,.page-transition-stage{display:none!important}
+    html,body{width:1920px!important;height:auto!important;margin:0!important;background:#fff!important;overflow:visible!important}
+    body{user-select:auto!important}
+    #deck-viewport{position:static!important;left:auto!important;top:auto!important;width:1920px!important;height:auto!important;overflow:visible!important;background:#fff!important}
+    #deck{position:static!important;display:block!important;width:1920px!important;height:auto!important;transform:none!important;will-change:auto!important}
+    .slide{position:relative!important;display:block!important;page-break-after:always;break-after:page;width:1920px!important;height:1080px!important;max-height:none!important;overflow:hidden!important;flex:none!important}
+    .slide[hidden]{display:none!important}
+    .slide:not(.active){pointer-events:auto}
+    .slide:last-child{page-break-after:auto;break-after:auto}
+    [contenteditable="true"]{box-shadow:none!important}
+  }
+
+</style>
+<style id="musein-dark">
+.slide,.slide *{font-family:'Inter',Arial,sans-serif!important;}
+.ign-slide{--ign-bg:#09090b!important;--ign-ink:#f5f3f0!important;--ign-ink2:rgba(245,243,240,.72)!important;--ign-ink3:rgba(245,243,240,.5)!important;--ign-ink4:rgba(245,243,240,.2)!important;--ign-hair:rgba(245,243,240,.14)!important;--ign-hair2:rgba(245,243,240,.25)!important;--ign-panel:rgba(28,22,24,.85)!important;--ign-a:#e2453f!important;--ign-b:#bd302d!important;--ign-c:#ff8a52!important;--ign-ember:#e2453f!important;background:#09090b!important;color:#f5f3f0!important;}
+.bespoke-root{background:radial-gradient(ellipse at 94% 9%,rgba(226,69,63,.27),transparent 44%),radial-gradient(ellipse at 4% 110%,rgba(165,34,24,.32),transparent 42%),#09090b!important;}
+.bespoke-root>div[aria-hidden="true"]{display:none!important;}
+.bespoke-root::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:176px 176px;opacity:.35;}
+.slide[data-vm-source-slide-id="musein-cover"] .bespoke-root{background:linear-gradient(90deg,rgba(3,3,4,.3),rgba(3,3,4,.02) 45%,transparent),url('assets/user-media/cover-background-v3.jpg') center/cover no-repeat!important;}
+.slide[data-vm-source-slide-id="musein-customers"] .bespoke-root{background:linear-gradient(90deg,rgba(3,3,4,.86),rgba(3,3,4,.55)),url('assets/user-media/dark-prism.png') center/cover no-repeat!important;}
+.slide[data-vm-source-slide-id="musein-vision"] .bespoke-root{background:linear-gradient(180deg,rgba(3,3,4,.18),rgba(3,3,4,.2) 52%,rgba(3,3,4,.78)),url('assets/user-media/closing-curtain.png') center/cover no-repeat!important;}
+.slide[data-vm-source-slide-id="musein-use-cases"] .bespoke-root{background:radial-gradient(ellipse at 85% 40%,rgba(226,69,63,.34),transparent 52%),#09090b!important;}
+.bespoke-root [data-bespoke-element="list"]{position:relative;padding:12px 18px 12px 66px!important;background:linear-gradient(135deg,rgba(34,28,31,.92),rgba(14,12,15,.9))!important;border:1px solid rgba(255,255,255,.13)!important;border-radius:16px!important;box-shadow:0 12px 34px rgba(0,0,0,.24)!important;backdrop-filter:blur(14px);}
+.bespoke-root [data-bespoke-element="list"]::before{content:'';position:absolute;left:16px;top:20px;width:34px;height:34px;background:var(--icon-color,#ff6a5e);mask:var(--musein-icon) center/contain no-repeat;-webkit-mask:var(--musein-icon) center/contain no-repeat;}
+.bespoke-root [data-bespoke-element="list"]>div>div{grid-template-columns:1fr!important;gap:0!important;}
+.bespoke-root [data-bespoke-element="list"]>div>div>span[aria-hidden]{display:none!important;}
+.bespoke-root [data-bespoke-element="list"] [data-editable-path$=".label"]{font-size:22px!important;line-height:1.15!important;color:#fff!important;}
+.bespoke-root [data-bespoke-element="list"] [data-editable-path$=".detail"]{font-size:16px!important;line-height:1.25!important;color:rgba(255,255,255,.72)!important;}
+.bespoke-root [data-bespoke-element="media"]{box-shadow:0 20px 68px rgba(0,0,0,.5),0 0 40px rgba(226,69,63,.08)!important;background:#0d0c0f!important;border:1px solid rgba(255,255,255,.16)!important;border-radius:20px!important;}
+.bespoke-root [data-bespoke-element="media"]>div{background:none!important;}
+.bespoke-root [data-bespoke-element="media"] img{filter:none!important;}
+.slide[data-vm-source-slide-id] .bespoke-root::after,.slide[data-vm-source-slide-id] .ign-slide::after{content:'';position:absolute;right:86px;top:20px;width:230px;height:46px;background:url('assets/user-media/musein-logo-v2.png') center/contain no-repeat;pointer-events:none;z-index:20;opacity:1;}
+.slide[data-vm-source-slide-id="musein-cover"] .bespoke-root::after{display:none;}
+.ign-ember-text{background:none!important;color:#e2453f!important;-webkit-text-fill-color:#e2453f!important;}
+
+[data-vm-source-slide-id="musein-cover"] .bespoke-grid>[data-bespoke-element="text"]:first-child{background:url('assets/user-media/musein-logo-v2.png') left center/85% auto no-repeat;color:transparent!important;}
+[data-vm-source-slide-id="musein-cover"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(4){--musein-icon:url('assets/diagrams-dark/icon-canvas.svg');}
+[data-vm-source-slide-id="musein-cover"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){--musein-icon:url('assets/diagrams-dark/icon-shield.svg');}
+[data-vm-source-slide-id="musein-cover"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(6){--musein-icon:url('assets/diagrams-dark/icon-film.svg');}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3){--musein-icon:url('assets/diagrams-dark/icon-users.svg');}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(4){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(4)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){--musein-icon:url('assets/diagrams-dark/icon-layers.svg');}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(6){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(6)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7){--musein-icon:url('assets/diagrams-dark/icon-wallet.svg');background:linear-gradient(115deg,#e2453f,#8e2925)!important;border-color:#f46b61!important;--icon-color:#fff;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(8){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(8)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9){--musein-icon:url('assets/diagrams-dark/icon-camera.svg');}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(10){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(10)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-problem"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(4){--musein-icon:url('assets/diagrams-dark/icon-canvas.svg');}
+[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(5){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(5)>div{font-size:22px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(6){--musein-icon:url('assets/diagrams-dark/icon-wand.svg');background:linear-gradient(115deg,#e2453f,#8e2925)!important;border-color:#f46b61!important;--icon-color:#fff;}
+[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(7){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(7)>div{font-size:22px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(8){--musein-icon:url('assets/diagrams-dark/icon-shield.svg');}
+[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(9){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-solution"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(9)>div{font-size:22px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(4){--musein-icon:url('assets/diagrams-dark/icon-network.svg');background:linear-gradient(115deg,#e2453f,#8e2925)!important;border-color:#f46b61!important;--icon-color:#fff;}
+[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(5){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(5)>div{font-size:21px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(6){--musein-icon:url('assets/diagrams-dark/icon-camera.svg');}
+[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(7){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(7)>div{font-size:21px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(8){--musein-icon:url('assets/diagrams-dark/icon-shield.svg');}
+[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(9){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-product"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(9)>div{font-size:21px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(4){--musein-icon:url('assets/diagrams-dark/icon-film.svg');background:linear-gradient(115deg,#e2453f,#8e2925)!important;border-color:#f46b61!important;--icon-color:#fff;}
+[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(5){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(5)>div{font-size:22px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(6){--musein-icon:url('assets/diagrams-dark/icon-camera.svg');}
+[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(7){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(7)>div{font-size:22px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(8){--musein-icon:url('assets/diagrams-dark/icon-bulb.svg');}
+[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(9){padding:76px 22px 12px 66px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-use-cases"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(9)>div{font-size:22px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3){--musein-icon:url('assets/diagrams-dark/icon-users.svg');}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(4){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(4)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){--musein-icon:url('assets/diagrams-dark/icon-building.svg');}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(6){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(6)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7){--musein-icon:url('assets/diagrams-dark/icon-network.svg');}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(8){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(8)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9){--musein-icon:url('assets/diagrams-dark/icon-globe.svg');background:linear-gradient(115deg,#e2453f,#8e2925)!important;border-color:#f46b61!important;--icon-color:#fff;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(10){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(10)>div{font-size:28px!important;line-height:1.35!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-customers"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3){--musein-icon:url('assets/diagrams-dark/icon-camera.svg');}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(4){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(4)>div{font-size:28px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(3) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){--musein-icon:url('assets/diagrams-dark/icon-network.svg');}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(6){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(6)>div{font-size:28px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7){--musein-icon:url('assets/diagrams-dark/icon-wallet.svg');background:linear-gradient(115deg,#e2453f,#8e2925)!important;border-color:#f46b61!important;--icon-color:#fff;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(8){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(8)>div{font-size:28px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(7) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9){--musein-icon:url('assets/diagrams-dark/icon-wand.svg');}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(10){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(10)>div{font-size:28px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(9) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(11){--musein-icon:url('assets/diagrams-dark/icon-refresh.svg');}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(12){padding:104px 22px 12px 80px!important;box-sizing:border-box;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="text"]:nth-child(12)>div{font-size:28px!important;line-height:1.22!important;color:rgba(255,255,255,.85)!important;}
+[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(11){padding:22px 22px 12px 80px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(11) [data-editable-path$=".label"]{font-size:32px!important;}[data-vm-source-slide-id="musein-difference"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(11) [data-editable-path$=".detail"]{font-size:20px!important;}
+[data-vm-source-slide-id="musein-vision"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(4){--musein-icon:url('assets/diagrams-dark/icon-bulb.svg');}
+[data-vm-source-slide-id="musein-vision"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(5){--musein-icon:url('assets/diagrams-dark/icon-refresh.svg');}
+[data-vm-source-slide-id="musein-vision"] .bespoke-grid>[data-bespoke-element="list"]:nth-child(6){--musein-icon:url('assets/diagrams-dark/icon-globe.svg');background:linear-gradient(115deg,#e2453f,#8e2925)!important;border-color:#f46b61!important;--icon-color:#fff;}</style><style>
+html,body{margin:0!important;width:100%;height:100%;overflow:hidden!important;background:#09090b!important;color:#fff;--deck-scale:1!important;--deck-w:1920px!important;--deck-h:1080px!important}
+main{position:fixed;inset:0 0 66px;overflow:hidden}
+#deck{position:absolute!important;left:50%!important;top:50%!important;width:1920px!important;height:1080px!important;display:block!important;transform:translate(-50%,-50%) scale(var(--viewer-scale,1))!important;transform-origin:center!important}
+#deck>.slide{position:absolute!important;inset:0!important;width:1920px!important;height:1080px!important;display:block!important;opacity:1!important;visibility:visible!important;content-visibility:visible!important;transform:none!important;border-radius:0!important}
+#deck>.slide[hidden]{display:none!important}
+#deck .bespoke-runtime-root,#deck .bespoke-runtime-root>.slide{width:1920px!important;height:1080px!important;transform:none!important;visibility:visible!important;opacity:1!important}
+#deck .bespoke-root{transform:none!important}
+#viewer-controls{position:fixed;bottom:max(12px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);height:42px;display:flex;align-items:center;gap:8px;padding:4px 8px;border-radius:28px;border:1px solid #ffffff25;background:#171518e8;font:500 13px Inter,Arial,sans-serif;z-index:100;box-sizing:content-box}
+#viewer-controls button{width:36px;height:36px;border:0;border-radius:50%;background:transparent;color:#fff;display:grid;place-items:center;cursor:pointer;font:500 20px Inter,Arial,sans-serif}
+#viewer-controls button:hover{background:#e2453f}#viewer-controls button:focus-visible{outline:2px solid #e2453f;outline-offset:2px}#viewer-controls button:disabled{opacity:.25;cursor:default;background:transparent}
+#viewer-counter{font-variant-numeric:tabular-nums;min-width:44px;text-align:center;color:#ddd}#viewer-controls svg{width:18px;height:18px}
+@media(max-height:450px){main{bottom:0}#viewer-controls{bottom:8px;opacity:.45}#viewer-controls:hover,#viewer-controls:focus-within{opacity:1}}
+</style></head><body data-mode="present"><main aria-label="Musein presentation"><div id="deck"><section data-viewer-page="0" class="slide bespoke-slide active" data-vm-slide-id="musein-cover" data-vm-source-slide-id="musein-cover" data-vm-slide-key="bespoke-musein-cover-v4" data-vm-index="0" data-vm-variant-state-id="musein-cover::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="1" data-dashi-page-total="8" data-dashi-page-number-signature="1/8" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-cover" data-vm-source-slide-id="musein-cover" data-vm-slide-key="bespoke-musein-cover-v4" data-vm-index="0" data-vm-variant-state-id="musein-cover::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 1 / 1 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.brand.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-cover-v4:composition.brand.text" data-editable-ready="true"  spellcheck="false" role="textbox">Musein</div></div><div data-bespoke-element="text" style="grid-area: 3 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.promise.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-cover-v4:composition.promise.text" data-editable-ready="true"  spellcheck="false" role="textbox">The Agentic Creative Operating System for Pro Video</div></div><div data-bespoke-element="text" style="grid-area: 6 / 1 / span 1 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(226, 69, 63); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 38px; line-height: 1.24; font-weight: 650; letter-spacing: -0.012em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-cover-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">From a single idea to a finished film</div></div><div data-bespoke-element="list" style="grid-area: 7 / 1 / span 2 / span 2; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-cover-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">One canvas</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-cover-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Frontier AI models</div></div></div></div></div><div data-bespoke-element="list" style="grid-area: 7 / 3 / span 2 / span 2; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-cover-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Pro subscription</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-cover-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">For professional creators</div></div></div></div></div><div data-bespoke-element="list" style="grid-area: 7 / 5 / span 2 / span 2; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-cover-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Idea to film</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-cover-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Zero friction. Full control.</div></div></div></div></div></div></div></section></div></section>
+<section data-viewer-page="1" hidden class="slide bespoke-slide active" data-vm-slide-id="musein-problem" data-vm-source-slide-id="musein-problem" data-vm-slide-key="bespoke-musein-problem-v4" data-vm-index="1" data-vm-variant-state-id="musein-problem::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="2" data-dashi-page-total="8" data-dashi-page-number-signature="2/8" data-transition-ready="true" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-problem" data-vm-source-slide-id="musein-problem" data-vm-slide-key="bespoke-musein-problem-v4" data-vm-index="1" data-vm-variant-state-id="musein-problem::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 1 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.title.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-problem-v4:composition.title.text" data-editable-ready="true"  spellcheck="false" role="textbox">Video creation is fragmented</div></div><div data-bespoke-element="text" style="grid-area: 2 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgba(247, 247, 244, 0.68); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 28px; line-height: 1.5; font-weight: 450; letter-spacing: 0px; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-problem-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">Cost, tool switching and limited control.</div></div><div data-bespoke-element="list" style="grid-area: 3 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Costly production</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Crews &amp; timelines</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-0.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-problem-v4:composition.integrated-detail-0.text" data-editable-ready="true"  spellcheck="false" role="textbox">Professional video production still relies on expensive crews and long timelines.</div></div><div data-bespoke-element="list" style="grid-area: 3 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Fragmented tools</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Context is lost</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-1.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-problem-v4:composition.integrated-detail-1.text" data-editable-ready="true"  spellcheck="false" role="textbox">Pro creators jump between separate text, image, audio, and video models and lose context every time they switch.</div></div><div data-bespoke-element="list" style="grid-area: 6 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Unclear costs</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Pay per generation</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 6 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-2.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-problem-v4:composition.integrated-detail-2.text" data-editable-ready="true"  spellcheck="false" role="textbox">Creators pay per generation with unpredictable cost.</div></div><div data-bespoke-element="list" style="grid-area: 6 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-3.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-3.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">The pro gap</div><div data-editable-path="composition.fact-3.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-problem-v4:composition.fact-3.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Limited control</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 6 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-3.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-problem-v4:composition.integrated-detail-3.text" data-editable-ready="true"  spellcheck="false" role="textbox">Hobbyist tools lack cinematic control; enterprise systems are overkill and slow.</div></div></div></div></section></div></section>
+<section data-viewer-page="2" hidden class="slide bespoke-slide active" data-vm-slide-id="musein-solution" data-vm-source-slide-id="musein-solution" data-vm-slide-key="bespoke-musein-solution-v4" data-vm-index="2" data-vm-variant-state-id="musein-solution::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="3" data-dashi-page-total="8" data-dashi-page-number-signature="3/8" data-transition-ready="true" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-solution" data-vm-source-slide-id="musein-solution" data-vm-slide-key="bespoke-musein-solution-v4" data-vm-index="2" data-vm-variant-state-id="musein-solution::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 1 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.title.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-solution-v4:composition.title.text" data-editable-ready="true"  spellcheck="false" role="textbox">One creative workflow</div></div><div data-bespoke-element="text" style="grid-area: 2 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgba(247, 247, 244, 0.68); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 28px; line-height: 1.5; font-weight: 450; letter-spacing: 0px; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-solution-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">An AI-native creative OS for Pro Consumers.</div></div><figure data-bespoke-element="media" style="grid-area: 3 / 1 / span 6 / span 7; min-width: 0px; min-height: 0px; position: relative; z-index: 2; margin: 0px; overflow: hidden; border-radius: 16px; border: 1px solid rgba(255, 91, 50, 0.28); background: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px;"><video src="assets/user-media/11-10.webm" poster="assets/user-media/11-10.poster.jpg" controls muted loop playsinline preload="metadata" style="width:100%;height:100%;display:block;object-fit:contain"></video><div aria-hidden="true" data-editable-skip="true" style="position: absolute; inset: 0px; pointer-events: none; background: linear-gradient(155deg, rgba(255, 91, 50, 0.12), rgba(194, 245, 61, 0.06));"></div></figure><div data-bespoke-element="list" style="grid-area: 3 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-solution-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Agentic canvas</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-solution-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">All media models</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-0.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-solution-v4:composition.integrated-detail-0.text" data-editable-ready="true"  spellcheck="false" role="textbox">Musein is an AI-native creative operating system for Pro Consumers. An agentic canvas unifies frontier text, image, audio, and video models in one workflow.</div></div><div data-bespoke-element="list" style="grid-area: 5 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-solution-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">AI director</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-solution-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Natural dialogue</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 5 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-1.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-solution-v4:composition.integrated-detail-1.text" data-editable-ready="true"  spellcheck="false" role="textbox">An AI director drives the full pipeline through natural conversation — character design, storyboarding, camera, and final output.</div></div><div data-bespoke-element="list" style="grid-area: 7 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-solution-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Pro subscription</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-solution-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">No per-video bills</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 7 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-2.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-solution-v4:composition.integrated-detail-2.text" data-editable-ready="true"  spellcheck="false" role="textbox">A subscription built for professional use, not per-video billing.</div></div></div></div></section></div></section>
+<section data-viewer-page="3" hidden class="slide bespoke-slide active" data-vm-slide-id="musein-product" data-vm-source-slide-id="musein-product" data-vm-slide-key="bespoke-musein-product-v4" data-vm-index="3" data-vm-variant-state-id="musein-product::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="4" data-dashi-page-total="8" data-dashi-page-number-signature="4/8" data-transition-ready="true" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-product" data-vm-source-slide-id="musein-product" data-vm-slide-key="bespoke-musein-product-v4" data-vm-index="3" data-vm-variant-state-id="musein-product::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 1 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.title.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-product-v4:composition.title.text" data-editable-ready="true"  spellcheck="false" role="textbox">A complete production system</div></div><div data-bespoke-element="text" style="grid-area: 2 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgba(247, 247, 244, 0.68); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 28px; line-height: 1.5; font-weight: 450; letter-spacing: 0px; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-product-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">Keep context from script to final export.</div></div><figure data-bespoke-element="media" style="grid-area: 3 / 1 / span 6 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; margin: 0px; overflow: hidden; border-radius: 16px; border: 1px solid rgba(255, 91, 50, 0.28); background: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px;"><img src="assets/user-media/musein-canvas-square-v2.jpg" alt="Musein six-stage creative canvas workflow" loading="lazy" decoding="async" style="width: 100%; height: 100%; display: block; object-fit: contain; filter: saturate(1.08) contrast(1.08);"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; inset: 0px; pointer-events: none; background: linear-gradient(155deg, rgba(255, 91, 50, 0.12), rgba(194, 245, 61, 0.06));"></div></figure><div data-bespoke-element="list" style="grid-area: 3 / 5 / span 2 / span 8; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-product-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Canvas &amp; models</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-product-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Connected nodes; leading models.</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 5 / span 2 / span 8; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-0.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-product-v4:composition.integrated-detail-0.text" data-editable-ready="true"  spellcheck="false" role="textbox">Agentic Infinite Canvas — every script, reference, character, audio track, and clip lives as a connected node. Build your own production workflow without switching platforms.
+
+Frontier Model Orchestration — access leading image, video, audio, and text models in one workspace, compare outputs side by side, and pick the best result.</div></div><div data-bespoke-element="list" style="grid-area: 5 / 5 / span 2 / span 8; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-product-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Cinematic control</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-product-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Camera and character consistency.</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 5 / 5 / span 2 / span 8; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-1.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-product-v4:composition.integrated-detail-1.text" data-editable-ready="true"  spellcheck="false" role="textbox">Cinematic Camera Control — precise control of lens, camera movement, depth of field, lighting, and 3D space for theater-grade frames.
+
+Character &amp; Scene Consistency — lock characters across shots and keep visual identity stable across a whole series or campaign.</div></div><div data-bespoke-element="list" style="grid-area: 7 / 5 / span 2 / span 8; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-product-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Production &amp; rights</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-product-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Script to export; business use.</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 7 / 5 / span 2 / span 8; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-2.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-product-v4:composition.integrated-detail-2.text" data-editable-ready="true"  spellcheck="false" role="textbox">Full Production Pipeline — scriptwriting → storyboarding → character design → generation → revision → export, all in one place.
+
+Commercial Rights by Default — every output carries full commercial usage for business campaigns, ads, and brand content.</div></div></div></div></section></div></section>
+<section data-viewer-page="4" hidden class="slide bespoke-slide active" data-vm-slide-id="musein-use-cases" data-vm-source-slide-id="musein-use-cases" data-vm-slide-key="bespoke-musein-use-cases-v4" data-vm-index="4" data-vm-variant-state-id="musein-use-cases::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="5" data-dashi-page-total="8" data-dashi-page-number-signature="5/8" data-transition-ready="true" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-use-cases" data-vm-source-slide-id="musein-use-cases" data-vm-slide-key="bespoke-musein-use-cases-v4" data-vm-index="4" data-vm-variant-state-id="musein-use-cases::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 1 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.title.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.title.text" data-editable-ready="true"  spellcheck="false" role="textbox">Create across formats</div></div><div data-bespoke-element="text" style="grid-area: 2 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgba(247, 247, 244, 0.68); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 28px; line-height: 1.5; font-weight: 450; letter-spacing: 0px; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">From social content to cinematic stories.</div></div><figure data-bespoke-element="media" style="grid-area: 3 / 1 / span 6 / span 7; min-width: 0px; min-height: 0px; position: relative; z-index: 2; margin: 0px; overflow: hidden; border-radius: 16px; border: 1px solid rgba(255, 91, 50, 0.28); background: rgba(255, 255, 255, 0.08); box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px;"><img src="assets/user-media/musein-showcase.png" alt="Musein Discover More — official creative showcase" loading="lazy" decoding="async" style="width: 100%; height: 100%; display: block; object-fit: contain; filter: saturate(1.08) contrast(1.08);"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; inset: 0px; pointer-events: none; background: linear-gradient(155deg, rgba(255, 91, 50, 0.12), rgba(194, 245, 61, 0.06));"></div></figure><div data-bespoke-element="list" style="grid-area: 3 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Social &amp; product</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Short-form content and e-commerce ads.</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-0.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.integrated-detail-0.text" data-editable-ready="true"  spellcheck="false" role="textbox">Social media content for TikTok, Reels, and Shorts
+Product video ads and e-commerce creative at scale</div></div><div data-bespoke-element="list" style="grid-area: 5 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Stories &amp; brands</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Dramas, series and brand campaigns.</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 5 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-1.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.integrated-detail-1.text" data-editable-ready="true"  spellcheck="false" role="textbox">Short dramas, series, and long-form storytelling
+TVC commercials and brand campaigns</div></div><div data-bespoke-element="list" style="grid-area: 7 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Film &amp; concepts</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Music, animation, film and storyboards.</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 7 / 8 / span 2 / span 5; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-2.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-use-cases-v4:composition.integrated-detail-2.text" data-editable-ready="true"  spellcheck="false" role="textbox">Music videos, animation, and experimental film
+Pre-production storyboards and concept visualization</div></div></div></div></section></div></section>
+<section data-viewer-page="5" hidden class="slide bespoke-slide active" data-vm-slide-id="musein-customers" data-vm-source-slide-id="musein-customers" data-vm-slide-key="bespoke-musein-customers-v4" data-vm-index="5" data-vm-variant-state-id="musein-customers::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="6" data-dashi-page-total="8" data-dashi-page-number-signature="6/8" data-transition-ready="true" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-customers" data-vm-source-slide-id="musein-customers" data-vm-slide-key="bespoke-musein-customers-v4" data-vm-index="5" data-vm-variant-state-id="musein-customers::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 1 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.title.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-customers-v4:composition.title.text" data-editable-ready="true"  spellcheck="false" role="textbox">For people who create for a living</div></div><div data-bespoke-element="text" style="grid-area: 2 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgba(247, 247, 244, 0.68); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 28px; line-height: 1.5; font-weight: 450; letter-spacing: 0px; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-customers-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">Independent pros to global teams.</div></div><div data-bespoke-element="list" style="grid-area: 3 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Pro Consumers</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Independent professionals</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-0.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-customers-v4:composition.integrated-detail-0.text" data-editable-ready="true"  spellcheck="false" role="textbox">independent creators, freelancers, and solo producers running their own business.</div></div><div data-bespoke-element="list" style="grid-area: 3 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Ad studios &amp; creative agencies</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Professional campaign output</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-1.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-customers-v4:composition.integrated-detail-1.text" data-editable-ready="true"  spellcheck="false" role="textbox">scaling campaign output with professional control.</div></div><div data-bespoke-element="list" style="grid-area: 6 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">MCNs &amp; creator networks</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Multiple accounts and brands</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 6 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-2.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-customers-v4:composition.integrated-detail-2.text" data-editable-ready="true"  spellcheck="false" role="textbox">producing content across multiple accounts and brands.</div></div><div data-bespoke-element="list" style="grid-area: 6 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-3.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-3.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Global brands &amp; production teams</div><div data-editable-path="composition.fact-3.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-customers-v4:composition.fact-3.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Speed without quality loss</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 6 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-3.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-customers-v4:composition.integrated-detail-3.text" data-editable-ready="true"  spellcheck="false" role="textbox">global brands, designers, and production teams that need speed without sacrificing quality.</div></div></div></div></section></div></section>
+<section data-viewer-page="6" hidden class="slide bespoke-slide active" data-vm-slide-id="musein-difference" data-vm-source-slide-id="musein-difference" data-vm-slide-key="bespoke-musein-difference-v4" data-vm-index="6" data-vm-variant-state-id="musein-difference::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="7" data-dashi-page-total="8" data-dashi-page-number-signature="7/8" data-transition-ready="true" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-difference" data-vm-source-slide-id="musein-difference" data-vm-slide-key="bespoke-musein-difference-v4" data-vm-index="6" data-vm-variant-state-id="musein-difference::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 1 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.title.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-difference-v4:composition.title.text" data-editable-ready="true"  spellcheck="false" role="textbox">Pro control. Agentic execution.</div></div><div data-bespoke-element="text" style="grid-area: 2 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgba(247, 247, 244, 0.68); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 28px; line-height: 1.5; font-weight: 450; letter-spacing: 0px; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-difference-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">Five differentiators for Pro Consumers.</div></div><div data-bespoke-element="list" style="grid-area: 3 / 1 / span 3 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Built for pros, not hobbyists</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Professional by default</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 1 / span 3 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-0.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-difference-v4:composition.integrated-detail-0.text" data-editable-ready="true"  spellcheck="false" role="textbox">Built for pros, not hobbyists — cinematic controls, commercial rights, and professional workflow by default.</div></div><div data-bespoke-element="list" style="grid-area: 3 / 5 / span 3 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Agentic canvas, not one generator</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Full creative context</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 5 / span 3 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-1.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-difference-v4:composition.integrated-detail-1.text" data-editable-ready="true"  spellcheck="false" role="textbox">Agentic canvas, not a single generator — orchestrate multiple frontier models and keep full creative context across every step.</div></div><div data-bespoke-element="list" style="grid-area: 3 / 9 / span 3 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Subscription, not per-generation</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Predictable professional access</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 3 / 9 / span 3 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-2.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-difference-v4:composition.integrated-detail-2.text" data-editable-ready="true"  spellcheck="false" role="textbox">Subscription, not per-generation fatigue — predictable professional access instead of credit-by-credit billing.</div></div><div data-bespoke-element="list" style="grid-area: 6 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-3.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-3.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">AI director, natural conversation</div><div data-editable-path="composition.fact-3.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-3.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Plan before generation</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 6 / 1 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-3.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-difference-v4:composition.integrated-detail-3.text" data-editable-ready="true"  spellcheck="false" role="textbox">AI director, natural conversation — describe what you want; the agent plans narrative, camera, pacing, and consistency before generation.</div></div><div data-bespoke-element="list" style="grid-area: 6 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-4.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-4.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Creator community &amp; recipes</div><div data-editable-path="composition.fact-4.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-difference-v4:composition.fact-4.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Share flows and remix canvases</div></div></div></div></div><div data-bespoke-element="text" style="grid-area: 6 / 7 / span 3 / span 6; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: left; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.integrated-detail-4.text" style="font-size: 21px; line-height: 1.4; font-weight: 500; letter-spacing: 0.02em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-difference-v4:composition.integrated-detail-4.text" data-editable-ready="true"  spellcheck="false" role="textbox">Creator community &amp; reusable recipes — publish work, study shared production flows, and remix proven canvases into your own projects.</div></div></div></div></section></div></section>
+<section data-viewer-page="7" hidden class="slide bespoke-slide active" data-vm-slide-id="musein-vision" data-vm-source-slide-id="musein-vision" data-vm-slide-key="bespoke-musein-vision-v4" data-vm-index="7" data-vm-variant-state-id="musein-vision::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-theme-pack="theme11"   data-vm-layout="" data-layout="" data-dashi-page-current="8" data-dashi-page-total="8" data-dashi-page-number-signature="8/8" data-transition-ready="true" data-deck-active=""><div class="bespoke-runtime-root" data-imported-bespoke-runtime="true" style="width: 1920px; height: 1080px;"><section class="slide bespoke-slide" data-vm-slide-id="musein-vision" data-vm-source-slide-id="musein-vision" data-vm-slide-key="bespoke-musein-vision-v4" data-vm-index="7" data-vm-variant-state-id="musein-vision::v4" data-vm-variant-id="v4" data-vm-variant-index="3" data-vm-variant-count="1" data-vm-variant-kind="bespoke" data-vm-variant-mode="selected-only" data-theme-pack="theme11" data-logical-slide="0"  ><div class="bespoke-root" style="--bespoke-bg: #0b0b0d; --bespoke-surface: rgba(255,255,255,.08); --bespoke-ink: #f7f7f4; --bespoke-muted: rgba(247,247,244,.68); --bespoke-accent: #e2453f; --bespoke-accent-2: #ff6a5e; --bespoke-line: rgba(247,247,244,.18); --bespoke-pad: 86px; --bespoke-gap: 20px; --bespoke-radius: 18px; position: absolute; top: 0px; left: 0px; width: 1920px; height: 1080px; overflow: hidden; transform: scale(var(--deck-scale,1)); transform-origin: left top; isolation: isolate; background: rgb(11, 11, 13); color: rgb(247, 247, 244); font-family: &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, system-ui, sans-serif; -webkit-font-smoothing: antialiased;"><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(226, 69, 63); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; top: -240px; right: -150px;"></div><div aria-hidden="true" data-editable-skip="true" style="position: absolute; width: 620px; height: 620px; border-radius: 50%; background: rgb(255, 106, 94); filter: blur(130px); opacity: 0.1; pointer-events: none; z-index: 0; bottom: -280px; left: -170px;"></div><div class="bespoke-grid" style="position: absolute; inset: 0px; z-index: 1; display: grid; grid-template-columns: repeat(12, minmax(0px, 1fr)); grid-template-rows: repeat(8, minmax(0px, 1fr)); gap: var(--bespoke-gap); padding: 86px;"><div data-bespoke-element="text" style="grid-area: 3 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: center; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.title.text" style="font-size: 76px; line-height: 1.02; font-weight: 900; letter-spacing: -0.035em; overflow-wrap: anywhere; text-wrap: balance;" data-editable-id="text:bespoke-musein-vision-v4:composition.title.text" data-editable-ready="true"  spellcheck="false" role="textbox">Inspiration into production</div></div><div data-bespoke-element="text" style="grid-area: 4 / 2 / span 2 / span 10; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: center; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.vision-full.text" style="font-size: 38px; line-height: 1.24; font-weight: 650; letter-spacing: -0.012em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-vision-v4:composition.vision-full.text" data-editable-ready="true"  spellcheck="false" role="textbox">Make cinematic professional video creation accessible to every Pro Consumer worldwide — turning individual inspiration into scalable, repeatable production, without the cost, friction, or fragmentation of traditional studios.</div></div><div data-bespoke-element="text" style="grid-area: 6 / 1 / span 1 / span 12; min-width: 0px; min-height: 0px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: flex-start; color: rgb(247, 247, 244); text-align: center; font-family: Archivo, &quot;Noto Sans SC&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif; padding-top: 0px; padding-bottom: 0px; overflow: hidden;"><div data-editable-path="composition.core.text" style="font-size: 38px; line-height: 1.24; font-weight: 650; letter-spacing: -0.012em; overflow-wrap: anywhere; text-wrap: pretty;" data-editable-id="text:bespoke-musein-vision-v4:composition.core.text" data-editable-ready="true"  spellcheck="false" role="textbox">Cinematic professional video for every Pro Consumer worldwide.</div></div><div data-bespoke-element="list" style="grid-area: 7 / 1 / span 2 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-0.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-vision-v4:composition.fact-0.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Worldwide access</div><div data-editable-path="composition.fact-0.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-vision-v4:composition.fact-0.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Every Pro Consumer worldwide</div></div></div></div></div><div data-bespoke-element="list" style="grid-area: 7 / 5 / span 2 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-1.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-vision-v4:composition.fact-1.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Scalable, repeatable production</div><div data-editable-path="composition.fact-1.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-vision-v4:composition.fact-1.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">From individual inspiration</div></div></div></div></div><div data-bespoke-element="list" style="grid-area: 7 / 9 / span 2 / span 4; min-width: 0px; min-height: 0px; position: relative; z-index: 2; padding: 30px; background: rgba(255, 255, 255, 0.08); border-right: 1px solid rgba(247, 247, 244, 0.18); border-bottom: 1px solid rgba(247, 247, 244, 0.18); border-left: 1px solid rgba(247, 247, 244, 0.18); border-image: none; border-radius: 18px; box-shadow: rgba(0, 0, 0, 0.48) 0px 26px 76px; display: flex; flex-direction: column; gap: 16px; color: rgb(247, 247, 244); overflow: hidden;"><div style="display: grid; gap: 12px; min-height: 0px; overflow: hidden;"><div style="display: grid; grid-template-columns: 30px minmax(0px, 1fr); gap: 12px; align-items: start; padding-top: 0px; border-top: 0px;"><span aria-hidden="true" data-editable-skip="true" style="color: rgb(226, 69, 63); font-family: &quot;Space Mono&quot;, &quot;IBM Plex Mono&quot;, ui-monospace, SFMono-Regular, monospace; font-size: 18px; font-weight: 800; line-height: 1.45;">•</span><div style="min-width: 0px;"><div data-editable-path="composition.fact-2.items.0.title" style="font-size: 25px; font-weight: 720; line-height: 1.3; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-vision-v4:composition.fact-2.items.0.title" data-editable-ready="true"  spellcheck="false" role="textbox">Without studio burdens</div><div data-editable-path="composition.fact-2.items.0.body" style="color: rgba(247, 247, 244, 0.68); font-size: 20px; line-height: 1.42; margin-top: 5px; overflow-wrap: anywhere;" data-editable-id="text:bespoke-musein-vision-v4:composition.fact-2.items.0.body" data-editable-ready="true"  spellcheck="false" role="textbox">Cost, friction, fragmentation</div></div></div></div></div></div></div></section></div></section></div></main><nav id="viewer-controls" aria-label="Presentation controls"><button id="previous" aria-label="Previous slide">‹</button><span id="viewer-counter" aria-live="polite">1 / 8</span><button id="next" aria-label="Next slide">›</button><button id="fullscreen" aria-label="Full screen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></nav><script src="assets/viewer.js"></script><script src="assets/component-motion.js"></script></body></html>
